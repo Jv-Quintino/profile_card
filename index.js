@@ -6,26 +6,25 @@ let startTop = card.offsetTop;
 let starLeft = card.offsetLeft;
 let offsetX, offsetY;
 
-cardHeader.addEventListener('mousedown', (e) =>{
+cardHeader.addEventListener('mousedown', (e) => {
     clicked = true;
     offsetX = e.clientX - card.offsetLeft;
     offsetY = e.clientY - card.offsetTop;
 });
 
-document.addEventListener('mouseup', () =>{
+document.addEventListener('mouseup', () => {
     clicked = false;
 });
 
-document.addEventListener('mousemove', (e) =>{
-    if(!clicked) return;
-    const { clientX, clientY} = e;
+document.addEventListener('mousemove', (e) => {
+    if (!clicked) return;
+    const { clientX, clientY } = e;
     card.style.left = `${clientX - offsetX}px`;
     card.style.top = `${clientY - offsetY}px`;
 });
 
-function resetPosition(){
+function resetPosition() {
     card.style.left = `${startLeft}px`;
     card.style.top = `${startTop}px`;
 }
 
-resetBtn.addEventListener('click', resetPosition);
