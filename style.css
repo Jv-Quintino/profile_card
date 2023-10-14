@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -17,20 +17,23 @@ body{
     background-size: cover;
 }
 
-.card{
-    position: absolute;
-    width: 400px;
+.card {
+    position: relative;
+    width: 700px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.43);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
-    padding: 1.3rem 1.5 rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.2px);
-    -webkit-backdrop-filter: blur(8.2px);
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border: 1px solid #ffffff20;
+
 }
 
-.card header{
+
+
+.card header {
     cursor: all-scroll;
     text-align: center;
     user-select: none;
@@ -38,25 +41,25 @@ body{
     border-bottom: 1px solid #ffffff20;
 }
 
-.card .card-body{
+.card .card-body {
     padding: 1.5rem;
     border-bottom: 1px solid;
 }
 
-.card .card-body .logo{
+.card .card-body .logo {
     text-align: center;
-} 
+}
 
-.card .card-body .logo h4{
+.card .card-body .logo h4 {
     margin-top: 15px;
     font-size: 22px;
 }
 
-.card .card-body .logo img{
+.card .card-body .logo img {
     max-width: 120px;
 }
 
-.card .card-body a{
+.card .card-body a {
     display: inline-block;
     background-color: #282828;
     color: #fff;
@@ -66,23 +69,23 @@ body{
     font-size: 14px;
 }
 
-.card-body h4{
+.card-body h4 {
     margin: 10px 0;
 }
 
-.card .card-body ul{
+.card .card-body ul {
     margin-top: 0;
 }
 
-.card footer{
+.card footer {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
     margin-top: 1rem;
 }
 
-.card footer button{
-    padding:  0.5rem 1rem;
+.card footer button {
+    padding: 0.5rem 1rem;
     outline: none;
     border: none;
     border-radius: 6px;
@@ -91,17 +94,21 @@ body{
     transition: all 0.3s ease;
 }
 
-.card footer button.youtube{
-    background-color: #f44336;
-    color: #801313;
+.card footer button.Linkedin {
+    background-color: #fffefe;
+    color: #131c80;
 }
 
-.card footer button.youtube:hover, .card footer button.reset:hover{
-    color: #fff;
+.card footer button.Linkedin:hover {
+    color: #000000;
+
 }
 
-.card footer button.reset{
-    background-color: #fb8c00;
-    color: #943604;
+.card footer button.Portfolio:hover {
+    color: #121111;
 }
 
+.card footer button.Portfolio {
+    background-color: #ffffff;
+    color: #1339d2;
+}
